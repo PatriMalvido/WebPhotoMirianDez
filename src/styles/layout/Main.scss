@@ -1,0 +1,107 @@
+.main {
+  min-height: 90vh;
+  max-width: 100%;
+  background: url(../../components/assets/mainblack.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.texts {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1px solid #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(164, 161, 161, 0.221);
+  padding: 55px;
+  backdrop-filter: blur(10px);
+
+  h1 {
+    color: #fff;
+    font-size: 55px;
+    white-space: nowrap;
+    text-shadow: 2rem 0rem 5rem #fff;
+  }
+  h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+  
+
+  .buttons {
+    margin-top: 1rem;
+
+    button {
+      margin: 1rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 15px 40px;
+      border: 1px solid #fff;
+      font-weight: bolder;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+        transition: 450ms;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .texts {
+    width: 90%;
+    h1 {
+      font-size: 35px;
+     
+    }
+    h3 {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .texts {
+    width: 80%;
+
+    h1 {
+      font-size: 20px;
+     
+    }
+
+    h3 {
+      font-size: 12px;
+    }
+
+    .buttons {
+      button {
+        padding: 5px 16px;
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .texts {
+    width: 100%;
+
+    h1 {
+      font-size: 17px;
+       
+    }
+    h3 {
+      font-size: 11px;
+      margin: 0.5rem;
+    }
+    .buttons {
+      button {
+        padding: 5px 10px;
+      }
+    }
+  }
+}
